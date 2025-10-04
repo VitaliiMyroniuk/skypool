@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://skypool-khmilnyk.netlify.app/sitemap.xml
