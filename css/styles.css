@@ -169,6 +169,20 @@ a {
     font-size: 14px
 }
 
+.btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: azure;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: rgb(230, 231, 233);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 /* Main END */
 
 /* Prices */
@@ -301,3 +315,38 @@ tr:hover {
 }
 
 /* Lightbox END */
+
+/* Telegram icon */
+.telegram-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: inline-block;
+    animation: blink 1.2s infinite;
+}
+
+.telegram-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 172, 237, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.telegram-icon:hover img {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(0, 172, 237, 0.8);
+}
+
+/* Blinking effect */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Telegram END */
